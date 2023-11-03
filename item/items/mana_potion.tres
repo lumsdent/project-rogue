@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cpykxkc5jayix"]
+
+[ext_resource type="Script" path="res://item/item_data.gd" id="1_0wy7i"]
+[ext_resource type="Texture2D" uid="uid://knseytyti5v4" path="res://Art/square-bottle2.aseprite" id="2_yydq0"]
+
+[resource]
+script = ExtResource("1_0wy7i")
+name = "Mana Potion"
+description = "Restore the magical force within you"
+stackable = true
+texture = ExtResource("2_yydq0")

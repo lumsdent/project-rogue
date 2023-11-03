@@ -1,0 +1,32 @@
+Rules\wall-1-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-1-rule1-places all tiles.tmx
+Rules\wall-1-rule2-applies variations.tmx
+
+Rules\wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-2-rule1-places all tiles.tmx
+Rules\wall-2-rule2-applies variations.tmx
+
+Rules\wall-3-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-3-rule1-places all tiles.tmx
+Rules\wall-3-rule2-applies variations.tmx
+
+Rules\wall-4-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-4-rule1-places all tiles.tmx
+Rules\wall-4-rule2-applies variations.tmx
+
+Rules\wall-5-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-5-rule1-places all tiles.tmx
+Rules\wall-5-rule2-applies variations.tmx
+
+Rules\wall-6-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-6-rule1-places all tiles.tmx
+Rules\wall-6-rule2-applies variations.tmx
+
+Rules\wall-7-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-7-rule1-places all tiles.tmx
+Rules\wall-7-rule2-applies variations.tmx
+
+Rules\wall-8-rule0-erases all generated tiles and resets them to their initial state.tmx
+Rules\wall-8-rule1-places all tiles.tmx
+Rules\wall-8-rule2-applies variations.tmx
+

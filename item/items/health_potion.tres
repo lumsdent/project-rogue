@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cijgmlj6pkjgl"]
+
+[ext_resource type="Script" path="res://item/item_data.gd" id="1_4qp5v"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_so6xb"]
+load_path = "res://.godot/imported/potion.ase-a69284cefeb7e247f955c5d33cda0129.ctex"
+
+[resource]
+script = ExtResource("1_4qp5v")
+name = "Health Potion"
+description = "Smells horrible, but you start to feel better"
+stackable = true
+texture = SubResource("CompressedTexture2D_so6xb")

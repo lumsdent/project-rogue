@@ -1,0 +1,59 @@
+[gd_scene load_steps=15 format=3 uid="uid://d2mwvx7wpf44g"]
+
+[ext_resource type="Script" path="res://chest.gd" id="1_86set"]
+[ext_resource type="PackedScene" uid="uid://b46axp4feciwu" path="res://interaction_area.tscn" id="2_lvyrh"]
+[ext_resource type="Script" path="res://inventory/inventory_data.gd" id="2_o6yrp"]
+[ext_resource type="Resource" uid="uid://cijgmlj6pkjgl" path="res://item/items/health_potion.tres" id="3_1q8hl"]
+[ext_resource type="Script" path="res://inventory/slot_data.gd" id="4_h7wt0"]
+[ext_resource type="Resource" uid="uid://cpykxkc5jayix" path="res://item/items/mana_potion.tres" id="5_62c3x"]
+
+[sub_resource type="Resource" id="Resource_d3puj"]
+script = ExtResource("4_h7wt0")
+item_data = ExtResource("3_1q8hl")
+quantity = 4
+
+[sub_resource type="Resource" id="Resource_hejxq"]
+script = ExtResource("4_h7wt0")
+item_data = ExtResource("3_1q8hl")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_ulud2"]
+script = ExtResource("4_h7wt0")
+item_data = ExtResource("5_62c3x")
+quantity = 8
+
+[sub_resource type="Resource" id="Resource_fol01"]
+script = ExtResource("4_h7wt0")
+item_data = ExtResource("5_62c3x")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_vjh7y"]
+script = ExtResource("2_o6yrp")
+slot_datas = Array[ExtResource("4_h7wt0")]([SubResource("Resource_d3puj"), null, SubResource("Resource_hejxq"), null, null, SubResource("Resource_ulud2"), null, null, null, null, SubResource("Resource_fol01"), null])
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_euxdr"]
+size = Vector2(30, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3720"]
+size = Vector2(31, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bc16"]
+size = Vector2(64, 64)
+
+[node name="chest" type="RigidBody2D" groups=["external_inventory"]]
+input_pickable = true
+script = ExtResource("1_86set")
+inventory_data = SubResource("Resource_vjh7y")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_euxdr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_y3720")
+
+[node name="InteractionArea" parent="." instance=ExtResource("2_lvyrh")]
+action_name = "open"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("RectangleShape2D_1bc16")

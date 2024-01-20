@@ -15,6 +15,8 @@ func _open_chest():
 	print("Opened Chest")
 # build inventory
 	toggle_inventory.emit(self)
+	print("game time")
+	
 #build loot from table
 #open inventory gui displaying loot result
 #take loot button moves loot to inventory 
